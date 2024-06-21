@@ -45,9 +45,9 @@ const Chat = () => {
         <Box w="20%" p={4} bg="gray.100">
           <Heading size="md" mb={4}>Online Users</Heading>
           <VStack align="start">
-            {["John", "Josh", "Joy", "Joe", "Jole", "Joff", "Joke", "Jote", "Jolly", "Joi"].map((user) => (
+            {onlineUsers.map((user) => (
               <HStack key={user}>
-                <Avatar size="sm" bg={onlineUsers.includes(user) ? "green.500" : "red.500"} />
+                <Avatar size="sm" bg="green.500" />
                 <Text>{user}</Text>
               </HStack>
             ))}
